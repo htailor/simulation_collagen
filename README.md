@@ -1,7 +1,7 @@
 Collagen Simulation
 ==============
 
-Partition function calculations for Collagen using the Transfer Matrix Method. This calculation produces shear force plots for various lengths of collagen set by the number of residue triplets `N`.
+Partition function calculations for collagen using the Transfer Matrix Method. This calculation produces shear force plots for various lengths of collagen set by the number of residue triplets `N`.
 
 Requirements
 ============
@@ -42,7 +42,7 @@ To set the number of residue triplets in a structure edit the file `N.list` to i
 N=4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50
 ```
 
-When the calculations are run directories will be created for each `N` containing the calculated free energies and mean axial displacements. The best method to run the calculations is by executing the `run.sh` script. Edit the script to set parameters highlighted in the table and run from the commnad line. An example of typical values are shown below:
+When the calculations are run, directories will be created for each `N` containing the calculated free energies and mean axial displacements. The best method to run the calculations is by executing the `run.sh` script. Edit the script to set parameters highlighted in the table and execute at the commnad line. An example of typical values are shown below:
 
 ```shell
 L=80.1
