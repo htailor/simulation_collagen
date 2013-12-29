@@ -24,7 +24,7 @@ umax=Parameters[[7,2]];
 umax=Parameters[[8,2]];
 
 n=ToExpression[StringTrim[Last[StringSplit[Directory[],"/"]],RegularExpression["N*"]]];
-etab=30.66;
+etab=14.5;
 
 ToNewton=Convert[ElectronVolt/Angstrom,Newton] SI[Pico Newton]^-1;(*Converts eV/\[Angstrom] to pN*)
 ToForceDimension[f_]:=(f (\[Kappa]/(2\[Beta]))^(1/2)) ToNewton;

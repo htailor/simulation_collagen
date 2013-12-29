@@ -13,8 +13,8 @@ find . -type d -name "N*" -exec rm -rf {} \; 2>/dev/null
 L=80.1
 M=400
 
-KAPPA=6
-SIGMA=0.0002667
+KAPPA=1.2
+SIGMA=0.00024
 KAPPA_SIGMA_R=$(printf %.0f `echo "$KAPPA/$SIGMA" | bc -l`)
 
 UMIN=0

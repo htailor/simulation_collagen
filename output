@@ -4,9 +4,9 @@ Global Parameters
 
 L:	80.100000
 m:	400
-kappa:	6.000000
-sigma:	0.000267
-kappa_sigma_r:	22497.187852
+kappa:	1.200000
+sigma:	0.000240
+kappa_sigma_r:	5000.000000
 Delta:	0.100000
 
 Extension Minimum:	0
@@ -14,14 +14,14 @@ Extension Maximum:	150
 
 
 beta:	4.00 
-mu:	0.01 
-c:	0.14 
-delta:	4.30 
-b:	0.38 
-k:	0.07 
-ev0:	1.71 
-C0:	0.23 
-e0:	0.005001
+mu:	0.05 
+c:	0.31 
+delta:	4.66 
+b:	0.55 
+k:	0.15 
+ev0:	1.64 
+C0:	0.28 
+e0:	0.004500
 beta:	38.681700
 
 *Number of processing threads: 8
@@ -6513,6 +6513,6 @@ Running N=85
 *** INTACT STATE COMPLETE ***
 
 ---------------------------
-NUCLEATION RUNTIME: 469.00
+NUCLEATION RUNTIME: 473.00
 ---------------------------
 
