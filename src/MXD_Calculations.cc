@@ -8,6 +8,11 @@
 
 #define PI 3.1415926535897932384626433832795
 
+/*
+	Mean axial displacement functions for collagen
+*/
+
+
 using namespace std;
 
 extern double L;

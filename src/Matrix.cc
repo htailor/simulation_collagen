@@ -3,6 +3,12 @@
 #include <stdlib.h>
 #include <iostream>
 
+/* 
+	Matrix container for gsl_matrix. Normal methods include getters and setters,
+	as well as methods to print the output to a file.
+*/
+
+
 extern "C" void dsyevx_ ( const char* jobz, const char* range, const char* uplo, int* n, double* a, int* lda, double* vl, double* vu, int* il, int* iu, double* abstol, int* m, double* w, double* z, int* ldz, double* work, int* lwork, int* iwork, int* ifail, int* info );
 
 extern double Delta;
@@ -87,7 +93,7 @@ void Matrix::print_column(const char* filename, int _column){
 }
 
 
-
+// Calculates only the first few eigensystem results
 void Matrix::calculate_eigensystem(int _eigen_limit){
     
     _EIGEN_LIMIT = _eigen_limit;
@@ -159,6 +165,7 @@ void Matrix::calculate_eigensystem(int _eigen_limit){
 
 }
 
+// Calculate all eigenvectors & eigenvalues
 void Matrix::calculate_eigensystem(){
     
   

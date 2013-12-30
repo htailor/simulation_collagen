@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <iostream>
 
+// Vector class to wrap around gsl_vector object
+
 using namespace std;
 
 Vector::Vector(){}

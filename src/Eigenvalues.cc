@@ -8,6 +8,8 @@ extern double T_ROE_LAMBDA_EV0;
 extern double T_ROE_LAMBDA_K;
 extern double L;
 
+// Analytical expressions for the eigenvalues
+
 double LAMBDA_R(int x)
 {
    return pow(PI,0.5)*exp(-pow(((PI*(double)x)/L),2));

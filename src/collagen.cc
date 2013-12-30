@@ -84,7 +84,11 @@ vector<vector<complex<double> > > MXDIntegral_R_ALPHA;
 vector<double> Integral_ROE_N;
 
 void NucleationRun(int intact,int broken){
-    
+
+    /*
+		Calculates the partition function for a nucleated state specified by the number of intact and broken base-pairs.
+	*/
+
 	Table FE = Table(2,umax-umin+1);
 	Table PF = Table(2,umax-umin+1);
     
@@ -247,27 +251,12 @@ int main(int argc,char *argv[])
     
     PotentialData.print_to_file("./results/potential_data.out");
     printf("Complete.\n\n");
-
-///////////////////////////////////////////////////////////////////////////////////////
-
-   ///STAGE 1 - CREATE TRANSFER MATRICES T,T00,T11///
-
-///////////////////////////////////////////////////////////////////////////////////////
-
-
-   /*
-   Create the transfer matrices T,T00,T11 using the Transfer Matrix Functions (These functions
-   contain the mathematical definitions and hence calculate the values for each element in the
-   matrix
-   */
-   
-    
     
     
 
 ///////////////////////////////////////////////////////////////////////////////////////
  
-   ///STAGE 2 - CALCULATE EIGENVALUES AND EIGENVECTORS OF MATRICES T,T00,T11///
+   ///STAGE 1 - CALCULATE EIGENVALUES AND EIGENVECTORS OF MATRICES T,T00,T11///
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -311,9 +300,11 @@ int main(int argc,char *argv[])
  
 ///////////////////////////////////////////////////////////////////////////////////////
 
-   ///STAGE 4 - PRE-CALCULATING INTEGRALS FOR THE PARTITION FUNCTION///
+   ///STAGE 2 - PRE-CALCULATING INTEGRALS FOR THE PARTITION FUNCTION///
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
+	// Calculates all the integral sums for the partition function calculations
 
    Integral_LAMBDA_1		= vector<vector<complex<double> > > (2*rmax+1, vector<complex<double> > (vmax) );
    Integral_R_N			= vector<vector<complex<double> > > (2*rmax+1, vector<complex<double> > (vmax) );
@@ -374,7 +365,7 @@ int main(int argc,char *argv[])
 
 ///////////////////////////////////////////////////////////////////////////////////////
  
-   ///STAGE 4 - CALCULATE PARTITION FUNCTION///
+   ///STAGE 3 - CALCULATE PARTITION FUNCTION///
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -432,7 +423,7 @@ int main(int argc,char *argv[])
 
 ///////////////////////////////////////////////////////////////////////////////////////
  
-   ///STAGE 5 - CREATE OUTPUT FILES///
+   ///STAGE 4 - CREATE OUTPUT FILES///
 
 ///////////////////////////////////////////////////////////////////////////////////////
 

@@ -158,6 +158,7 @@ void Menu(int argc, char *argv[])
 
    FILE * Simulation_Parameters = fopen("Parameters","w");
 
+   // save parameter values to a file
    fprintf(Simulation_Parameters,"L:\t%3.6f\nm:\t%i\nkappa:\t%3.6f\nsigma:\t%3.6f\nkappa_sigma_r:\t%3.6f\nDelta:\t%3.6f\nExtension Minimum:\t%i\nExtension Maximum:\t%i\nbeta:\t%-5.2f\nmu:\t%-5.2f\nc:\t%-5.2f\ndelta:\t%-5.2f\nb:\t%-5.2f\nk:\t%-5.2f\nev0:\t%-5.2f\nC0:\t%-5.2f\ne0:\t%-8.6f\nbeta:\t%-8.6f",L,m,kappa,sigma,kappa_sigma_r,Delta,umin,umax,T_ROE_LAMBDA_BETA,T_ROE_LAMBDA_MU,T_ROE_LAMBDA_C,T_ROE_LAMBDA_DELTA,T_ROE_LAMBDA_B,T_ROE_LAMBDA_K,T_ROE_LAMBDA_EV0,T_ROE_LAMBDA_C0,e0,beta);
    fclose(Simulation_Parameters);
 

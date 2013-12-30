@@ -12,6 +12,8 @@ extern double e0;
 extern double eta_d;
 extern double beta;
 
+// Potential for Collagen
+
 double Potential(double x){
 
     return ((6*beta*e0)/Squared(eta_d))*Squared(x);

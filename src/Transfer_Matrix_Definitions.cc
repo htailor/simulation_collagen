@@ -3,10 +3,16 @@
 #include "Functions.hh"
 #include <cmath>
 
+
 using namespace std;
 
 extern double beta;
 extern double kappa;
+
+/*
+	Following are the transfer matrix equations used for the backbone
+	and base-pairs in collagen
+*/
 
 double T_R(double ea, double eb)
 {

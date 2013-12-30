@@ -19,6 +19,8 @@ extern double L;
 
 using namespace std;
 
+// Analytical expression of the eigenfunctions of the backbone
+
 complex<double> PSI_R(int r, double eta)
 {
    return pow(L,-0.5)*polar((double)1,(r*eta*2*PI)/L);
@@ -29,6 +31,7 @@ complex<double> g(int r, double eta)
     return polar((double)1,(r*eta*2*PI)/L);
 }
 
+// Complex function from within the partition function equation
 
 double PSI_ROE(int roe, double eta)
 {
